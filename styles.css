@@ -195,41 +195,36 @@ audio{
     bottom: 150px;
     left: 5px;
 }
-.playlist{
+.playlists{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     overflow-x:auto;
     overflow-y:hidden;
+    margin-top: 15px;
 }
-.playlist section {
+.playlists section {
     margin: 5px;
     position:relative;
 }
-.playlist div{
-    position: absolute;
-    top: 251px;
+.playlists div{
+    position: relative;
     background-color:var(--skyblue);
-    padding: 5px;
-    height: 50px;
-    width: 350px;
 }
 .curated{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     overflow-x:auto;
     overflow-y:hidden;
+    margin-top:15px;
 }
-.curated section {
+.curated section{
     margin: 5px;
     position:relative;
 }
 .curated div{
-    position: absolute;
-    top: 251px;
+    position: relative;
     background-color:var(--darkblue);
-    padding: 5px;
-    height: 50px;
-    width: 350px;
+
 }
 audio::-webkit-media-controls-mute-button {
     background-color:#ffffff;
@@ -267,4 +262,7 @@ audio::-webkit-media-controls-enclosure {
 }
 #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
     background:#ffffff;
+}
+button:hover{
+    background-color: var(--deepblue); 
 }
