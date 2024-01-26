@@ -54,3 +54,29 @@ body {
     margin: 0 auto;
     background-color: #ffffff;
 }
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --deepblue:#020659;
+    --darkblue:#020873;
+    --blue:#030A8C;
+    --lightblue:#0D8DFB;
+    --royalblue:#2104D9;
+    --skyblue:#2699FB;
+    --purple:#590242; 
+}
+
+h1{
+    font-size:1.25em;
+}
+h2, h3 {
+    font-size:1em;
+}
+p,dl,dd{
+    font-size:1em;
+}
+footer p{
+    font-size:.75em;
+}
