@@ -130,8 +130,7 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
-
-@media screen and (min-width:834px) {
+@media screen and (min-width:834px){
     ul {
         overflow: visible;
         position: absolute;
@@ -142,4 +141,8 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     label span, input {
         display: none;
     }
+}
+#trending{
+    display:grid;
+    grid-template-rows: 1fr;
 }
