@@ -45,6 +45,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 html {
     background-color: #020659;
 }
@@ -141,8 +142,4 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     label span, input {
         display: none;
     }
-}
-#trending{
-    display:grid;
-    grid-template-rows: 1fr;
 }
