@@ -8,10 +8,9 @@
     <title>MuzakMaker- Smooth Jazz</title>
 </head>
 <body>
-    <header>
+    <section id="header">
         <h1>Smooth Jazz</h1>
         <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
-    </header>
     <nav>
         <h2>Main Navigation</h2>
         <input type="checkbox" id="dropdown" />
@@ -24,18 +23,7 @@
           <li><a href="user"><img src="/drive-download-20240125T085255Z-001/images/duke-silver.png" alt="user profile picture"></a></li>
         </ul>
     </nav>
-
-<section>
-<h2>Smooth Jazz</h2>  
-<p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
-<ul>
-<li>MuzakMaker</li>
-<li>Trending Songs</li>
-<li>Your playlists</li>
-<li>Curated Playlists</li>
-<li>duke-silver.png</li>
-</ul>
-</section>
+    </section>
 
 <main>
     <section id="trending">
@@ -56,7 +44,7 @@
         </section>
 
         <section>
-            <div class="scroll">
+            <div>
             <h3>My Road</h3>
                 <dl>
                     <dt>Artist</dt> 
@@ -70,7 +58,7 @@
         </section>
 
         <section>
-            <div class="scroll">
+            <div>
             <h3>Papaya</h3>
                 <dl>
                     <dt>Artist</dt>
@@ -84,7 +72,7 @@
         </section>
 
         <section>
-            <div class="scroll">
+            <div>
             <h3>Smoothies</h3>
                 <dl>
                     <dt>Artist</dt>
@@ -98,7 +86,7 @@
         </section>
 
         <section>
-            <div class="table">
+            <div>
             <h3>Successful Performance</h3>
                 <dl>
                     <dt>Artist</dt>
@@ -113,23 +101,23 @@
     <button>More trending</button>
     </div>
 </section>
-</main>
 
 
-<section id="playlists">
+<section id="playlist">
     <h2>Your Playlists</h2>
-        <section>
-            <div class="table">
-            <img src="drive-download-20240125T085255Z-001/images/best-of-2020-cover.png" alt="best of 2020 cover">
-            <dl>
-                <dt>Best of 2023</dt>
-                <dd>The music that got you through the lock down.</dd>
-            </dl>
-            </div>
-        </section>
+        <div class="playlists">
+            <section>
+                <div>
+                <img src="drive-download-20240125T085255Z-001/images/best-of-2020-cover.png" alt="best of 2020 cover">
+                    <dl>
+                        <dt>Best of 2023</dt>
+                        <dd>The music that got you through the lock down.</dd>
+                    </dl>
+                </div>
+            </section>
         
         <section>
-            <div class="table">
+            <div>
                 <img src="drive-download-20240125T085255Z-001/images/pumpkin-spice-cover.png" alt="pumpkin spice">
                 <dl>
                     <dt>Pumpkin Spice</dt>
@@ -139,7 +127,7 @@
         </section>
 
         <section>
-            <div class="table">
+            <div>
                 <img src="drive-download-20240125T085255Z-001/images/quiet-storm-cover.png" alt="quiet storm">
                 <dl>
                     <dt>Quiet Storm</dt>
@@ -149,7 +137,7 @@
         </section>
     
         <section>
-            <div class="table">
+            <div>
                 <img src="drive-download-20240125T085255Z-001/images/smooth-jazz-cover.png" alt="smooth jazz">
                 <dl>
                     <dt>Smooth Jazz</dt>
@@ -159,7 +147,7 @@
         </section>
 
         <section>
-            <div class="table">
+            <div>
                 <img src="drive-download-20240125T085255Z-001/images/smooth-study-cover.png" alt="smooth study">
                 <dl>
                     <dt>Smooth Study</dt>
@@ -167,23 +155,25 @@
                 </dl>
             </div>
         </section>
+        </div>
+        </section>
     <button>All your playlists</button>
-</section>
 
-<section id="curated">
+    <section id="curated">
     <h2>Curated Playlists</h2>
-        <section>
-            <div class="table2">
+        <div class="playlists">
+            <section>
+            <div>
                 <img src="drive-download-20240125T085255Z-001/images/boozy-brunch-cover.png" alt="boozy brunch">
                 <dl>
                     <dt>Boozy Brunch</dt>
                     <dd>Light up the afternoon with these energetic hits.</dd>
                 </dl>
-            </div>            
-        </section>
+            </div>     
+            </section>
 
         <section>
-            <div class="table2">
+            <div>
                 <img src="drive-download-20240125T085255Z-001/images/dinner-party-cover.png" alt="dinner party">
                 <dl>
                     <dt>Dinner Party</dt>
@@ -193,7 +183,7 @@
         </section>
 
         <section>
-            <div class="table2">
+            <div>
                 <img src="drive-download-20240125T085255Z-001/images/mellow-cover.png" alt="mellow">
                 <dl>
                     <dt>Mellow</dt>
@@ -203,7 +193,7 @@
         </section>
 
         <section>
-            <div class="table2">
+            <div>
                 <img src="drive-download-20240125T085255Z-001/images/jazz-chill-cover.png" alt="jazz chill">
                 <dl>
                     <dt>Jazz and Chill</dt>
@@ -213,7 +203,7 @@
         </section>
 
         <section>
-            <div class="table2">
+            <div>
                 <img src="drive-download-20240125T085255Z-001/images/smooth-saxophone-cover.png" alt="smooth saxophone">
                 <dl>
                     <dt>Jazz Saxophone</dt>
@@ -221,10 +211,12 @@
                 </dl>
             </div>
         </section>
+    </div>
+    </section>
     <button>More curated</button>
-</section>
+</main>
 
-<footer>
+    <footer>
     Copyright 2022 Smooth Jazz
     </footer>
 </body>
