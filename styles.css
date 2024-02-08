@@ -77,9 +77,22 @@ h2, h3 {
 h1, h2, h3{
     font-weight:bold;
     text-transform: uppercase;
+    color:#590242
 }
 p,dl,dd{
     font-size:1em;
+}
+dl {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+section dt {
+    display: inline-block;
+    font-weight: bold;
+}
+section dd{
+    display: inline-block;
 }
 body{
     color:#ffffff;
@@ -154,8 +167,11 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 
 #header nav{
-    display:inline-block;
-    background: linear-gradient(--royalblue,--deepblue);
+    background: rgb(33,4,217);
+    background: linear-gradient(90deg, rgba(33,4,217,1) 17%, rgba(9,9,121,1) 37%, rgba(2,0,36,1) 100%);
+}
+#header h1, p{
+    color: white;
 }
 #trending div{
     display:grid;
