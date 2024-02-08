@@ -212,12 +212,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     height: 50px;
     width: 350px;
 }
-dl {
-    display:flex;
-}
-dt{
-    padding-right:5px;
-}
 audio{
     position:absolute;
     bottom: 150px;
@@ -241,6 +235,16 @@ audio{
     position: relative;
     background-color: var(--lightblue)
 }
+.playlists dl{
+    display: grid;
+    grid-template-columns:1fr;
+    margin: 10px;
+    text-align: center;
+}
+.playlists dt{
+    font-size:1em;
+    padding-bottom: 10px;
+}
 .curated{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -256,6 +260,16 @@ audio{
 .curated div{
     position: relative;
     background-color:var(--darkblue);
+}
+.curated dl{
+    display: grid;
+    grid-template-columns:1fr;
+    margin: 10px;
+    text-align: center;
+}
+.curated dt{
+    font-size:1em;
+    padding-bottom: 10px;
 }
 audio::-webkit-media-controls-mute-button {
     background-color:#ffffff;
