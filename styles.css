@@ -222,6 +222,8 @@ audio{
     position:absolute;
     bottom: 150px;
     left: 5px;
+    color:#ffffff;
+    opacity: 50%;
 }
 .playlists{
     display: grid;
@@ -258,9 +260,11 @@ audio{
 audio::-webkit-media-controls-mute-button {
     background-color:#ffffff;
     border-radius:50%;
+    opacity:100%;
 }
 audio::-webkit-media-controls-play-button {
     background-color:#ffffff;
+    opacity: 100%;
     border-radius:50%;
 }
 audio::-webkit-media-controls-enclosure {
