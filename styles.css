@@ -66,18 +66,34 @@ body {
     --skyblue:#2699FB;
     --purple:#590242; 
 }
-h1{
-    font-size:1.25em;
-    line-height: 2em;
+title {
+    display:grid;
+    position: relative;
+    left: 100px;
+    top: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 h2, h3 {
     font-size:1em;
     line-height: 2em;
 }
+h1, p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 h1, h2, h3{
     font-weight:bold;
     text-transform: uppercase;
     color:#590242
+}
+h1{
+    font-size:1.25em;
+    padding-bottom: 15px;
+}
+h2{
+    padding-top: 20px;
+    padding-left: 15px;
 }
 p,dl,dd{
     font-size:1em;
