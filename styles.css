@@ -50,7 +50,7 @@ html {
     background-color: #020659;
 }
 body {
-    width: 375px;
+    width: 325px;
     margin: 0 auto;
     background-color: #ffffff;
 }
@@ -170,7 +170,11 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 0;
 }
 @media screen and (min-width:834px){
+    body{
+        background-color:white;
+    }
     ul {
+        width: 100%;
         overflow: visible;
         position: absolute;
         top: 0;
@@ -181,7 +185,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         display: none;
     }
 }
-
 #header nav{
     background: rgb(33,4,217);
     background: linear-gradient(90deg, rgba(33,4,217,1) 17%, rgba(9,9,121,1) 37%, rgba(2,0,36,1) 100%);
