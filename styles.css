@@ -103,11 +103,11 @@ dl {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 }
-section dt {
+div dt {
     display: inline-block;
     font-weight: bold;
 }
-section dd{
+div dd{
     display: inline-block;
 }
 body{
@@ -204,27 +204,25 @@ header h1, p{
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
 }
-.scroll {
+.scroll{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     overflow-x:auto;
     overflow-y:hidden;
 }
-.scroll section {
+.scroll div {
     margin: 10px;
     position:relative;
 }
 .scroll div{
-    position: absolute;
-    top: 251px;
-    background-color: rgba(255,255,255.75);
+    background-color: gray;
     padding: 5px;
     height: 50px;
     width: 350px;
 }
 audio{
-    position:absolute;
-    bottom: 150px;
+    position:relative;
+    bottom: 175px;
     left: 5px;
     color:#ffffff;
     opacity: 50%;
