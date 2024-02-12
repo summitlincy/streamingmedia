@@ -120,13 +120,34 @@ ul {
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
+    position: absolute;
+    left: 10px;
+    top: 20px;
 }
 label {
     cursor: pointer;
     display: inline-block;
     padding: 28px 20px;
-    position: relative;
+    position: absolute;
+    left:10px;
+    top: 10px;
     user-select: none;
+}
+nav {
+    position:absolute;
+    top: 0px; 
+    width:375px;
+    text-align: center;
+    background-color: var(--blue);
+    text-decoration: none;
+}
+nav h2{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow:hidden;
+}
+nav #home{
+    display:block;
 }
 label span {
     background-color: #ffffff;
@@ -169,28 +190,14 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
-@media screen and (min-width:834px){
-    body{
-        width: 834px;
-    }
-    ul {
-        width: 50%;
-        overflow: visible;
-        position: absolute;
-        top: 0;
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    }
-    label span, input {
-        display: none;
-    }
-}
-#header nav{
+header{
+    position: relative;
+    top: 50px;
     background: rgb(33,4,217);
     background: linear-gradient(90deg, rgba(33,4,217,1) 17%, rgba(9,9,121,1) 37%, rgba(2,0,36,1) 100%);
     padding: 25px;
 }
-#header h1, p{
+header h1, p{
     color: white;
 }
 #trending div{
@@ -222,6 +229,11 @@ audio{
     color:#ffffff;
     opacity: 50%;
 }
+#trending {
+    color:#590242;
+    display:grid;
+    grid-template-rows:1fr 1fr;
+}
 .playlists{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -242,6 +254,7 @@ audio{
     display: grid;
     grid-template-columns:1fr;
     margin: 10px;
+    height:135px;
     text-align: center;
 }
 .playlists dt{
@@ -268,6 +281,7 @@ audio{
     display: grid;
     grid-template-columns:1fr;
     margin: 10px;
+    height: 135px;
     text-align: center;
 }
 .curated dt{
@@ -329,3 +343,47 @@ dt{
 button:hover{
     background-color: var(--deepblue); 
 }
+@media screen and (min-width:834px){
+    body{
+        width: 834px;
+    }
+    nav{
+        width: 834px;
+    }
+    ul {
+        width: 100%;
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        text-transform: uppercase;
+        color: white;
+    }
+    label span, input {
+        display: none;
+    }
+    #trending {
+        display: grid;
+        position: relative;
+        top: 50px;
+    }
+    header{
+        position:relative;
+        top: 40px;
+    }
+    .playlists{
+        display:grid;
+        grid-template-rows: 1fr;
+        overflow-y:auto;
+        overflow-x:hidden;
+        max-width: 50%;
+    }
+    .curated{
+        position:relative;
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        overflow-y:auto;
+        overflow-x:hidden;
+        max-width: 50%;
+    }
