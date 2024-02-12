@@ -231,8 +231,6 @@ audio{
 }
 #trending {
     color:#590242;
-    display:grid;
-    grid-template-rows:1fr 1fr;
 }
 .playlists{
     display: grid;
@@ -350,6 +348,9 @@ button:hover{
     nav{
         width: 834px;
     }
+    nav h2{
+        color:white;
+    }
     ul {
         width: 100%;
         overflow: visible;
@@ -374,16 +375,32 @@ button:hover{
     }
     .playlists{
         display:grid;
+        float:left;
+        grid-template-rows: 1fr;
+        overflow-y:auto;
+        overflow-x:hidden;
+        max-width: 50%;
+        }
+    .playlists dl{
+        display: grid;
+        grid-template-rows:1fr;
+        margin: 10px;
+        height: 50px;
+        text-align: center;
+        }
+    .curated{
+        float:right;
+        display:grid;
         grid-template-rows: 1fr;
         overflow-y:auto;
         overflow-x:hidden;
         max-width: 50%;
     }
-    .curated{
-        position:relative;
-        display:grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        overflow-y:auto;
-        overflow-x:hidden;
-        max-width: 50%;
+    .curated dl{
+        display: grid;
+        grid-template-rows:1fr;
+        margin: 10px;
+        height: 50px;
+        text-align: center;
     }
+}
