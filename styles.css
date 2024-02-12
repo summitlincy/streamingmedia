@@ -174,12 +174,12 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         width: 834px;
     }
     ul {
-        width: 100%;
+        width: 50%;
         overflow: visible;
         position: absolute;
         top: 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
     label span, input {
         display: none;
