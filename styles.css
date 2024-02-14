@@ -200,11 +200,12 @@ header{
 header h1, p{
     color: white;
 }
-#trending div{
+.trending div{
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-    padding: 10px;
+    overflow-x:auto;
 }
+
 .scroll{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -212,14 +213,7 @@ header h1, p{
     overflow-y:hidden;
 }
 .scroll div {
-    margin: 10px;
     position:relative;
-}
-.scroll div{
-    background-color: gray;
-    padding: 5px;
-    height: 50px;
-    width: 350px;
 }
 audio{
     position:relative;
@@ -228,7 +222,7 @@ audio{
     color:#ffffff;
     opacity: 50%;
 }
-#trending {
+.trending {
     color:#590242;
 }
 .playlists{
@@ -238,13 +232,16 @@ audio{
     overflow-y:hidden;
     margin-top: 15px;
     background-color:var(--skyblue);
+    padding:10px;
+    border: 10px;
 }
 .playlists section {
-    margin: 5px;
+    margin: 10px;
     position:relative;
 }
 .playlists div{
     position: relative;
+    margin: 5px;
     background-color: var(--lightblue)
 }
 .playlists dl{
@@ -265,6 +262,8 @@ audio{
     overflow-y:hidden;
     margin-top:15px;
     background-color:var(--blue);
+    padding: 10px;
+    border: 10px;
 }
 .curated section{
     margin: 5px;
@@ -273,6 +272,7 @@ audio{
 .curated div{
     position: relative;
     background-color:var(--darkblue);
+    margin: 5px;
 }
 .curated dl{
     display: grid;
@@ -347,9 +347,6 @@ button:hover{
     nav{
         width: 834px;
     }
-    nav h2{
-        color:white;
-    }
     ul {
         width: 100%;
         overflow: visible;
@@ -357,8 +354,12 @@ button:hover{
         top: 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    nav a{
         text-transform: uppercase;
         color: white;
+        text-decoration:none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     label span, input {
         display: none;
@@ -371,35 +372,35 @@ button:hover{
     header{
         position:relative;
         top: 40px;
+        color:white;
     }
     .playlists{
         display:flex;
+        flex-direction:column;    
         float:left;
-        grid-template-rows: 1fr;
         overflow-y:auto;
         overflow-x:hidden;
-        max-width: 50%;
+        max-width:45%;
         }
-    .playlists dl{
-        display: flex;
-        grid-template-rows:1fr;
-        margin: 10px;
-        height: 50px;
-        text-align: center;
+    .playlists div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            text-wrap: wrap;
         }
     .curated{
-        float:right;
         display:flex;
-        grid-template-rows: 1fr;
+        flex-direction:column;
+        float:right;        
         overflow-y:auto;
         overflow-x:hidden;
-        max-width: 50%;
+        max-width: 45%;
     }
-    .curated dl{
-        display: flex;
-        grid-template-rows:1fr;
-        margin: 10px;
-        height: 50px;
+    .curated div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         text-align: center;
+        text-wrap: wrap;
     }
+
 }
