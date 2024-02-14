@@ -203,6 +203,7 @@ header h1, p{
 #trending div{
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    padding: 10px;
 }
 .scroll{
     display: grid;
@@ -372,7 +373,7 @@ button:hover{
         top: 40px;
     }
     .playlists{
-        display:grid;
+        display:flex;
         float:left;
         grid-template-rows: 1fr;
         overflow-y:auto;
@@ -380,7 +381,7 @@ button:hover{
         max-width: 50%;
         }
     .playlists dl{
-        display: grid;
+        display: flex;
         grid-template-rows:1fr;
         margin: 10px;
         height: 50px;
@@ -388,14 +389,14 @@ button:hover{
         }
     .curated{
         float:right;
-        display:grid;
+        display:flex;
         grid-template-rows: 1fr;
         overflow-y:auto;
         overflow-x:hidden;
         max-width: 50%;
     }
     .curated dl{
-        display: grid;
+        display: flex;
         grid-template-rows:1fr;
         margin: 10px;
         height: 50px;
