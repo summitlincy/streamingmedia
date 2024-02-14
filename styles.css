@@ -324,7 +324,7 @@ audio::-webkit-media-controls-enclosure {
     border-radius: 5px;
 }
 #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
-    background:#ffffff;
+    background:white;
 }
 button{
     background-color: var(--purple);
@@ -333,12 +333,19 @@ button{
     padding: 10px;
     max-width:fit-content;
     border-radius: 10px;
+    display: relative;
 }
 dt{
     text-transform: uppercase;
 }
 button:hover{
     background-color: var(--deepblue); 
+}
+footer{
+    display:block;
+    color:var(--purple);
+    text-align: center;
+    padding-top: 50px;
 }
 @media screen and (min-width:834px){
     body{
@@ -393,8 +400,8 @@ button:hover{
         flex-direction:column;
         float:right;        
         overflow-y:auto;
-        overflow-x:hidden;
         max-width: 45%;
+        max-height: 50%;
     }
     .curated div{
         display: grid;
@@ -402,5 +409,4 @@ button:hover{
         text-align: center;
         text-wrap: wrap;
     }
-
 }
