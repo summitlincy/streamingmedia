@@ -82,7 +82,7 @@ h2, h3 {
 h1, p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-h1, h2, h3{
+h1, h2 {
     font-weight:bold;
     text-transform: uppercase;
     color:#590242
@@ -210,15 +210,11 @@ header h1, p{
 }
 #trending div h3{
     width: 325px;
-    background-color: gray;
-    opacity:20%;
     position:absolute;
     top:315px;
 }
 #trending div dl{
     width:325px;
-    background-color: gray;
-    opacity:30%;
     color:var(--purple);
     position:absolute;
     top:350px;
