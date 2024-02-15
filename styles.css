@@ -204,13 +204,31 @@ header h1, p{
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     overflow-x:auto;
+    width: 325px;
+    margin-right:20px;
+    padding-right: 15px;
 }
-
+#trending div h3{
+    width: 325px;
+    background-color: gray;
+    opacity:20%;
+    position:absolute;
+    top:315px;
+}
+#trending div dl{
+    width:325px;
+    background-color: gray;
+    opacity:30%;
+    color:var(--purple);
+    position:absolute;
+    top:350px;
+}
 .scroll{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     overflow-x:auto;
     overflow-y:hidden;
+    margin-top: 20px;
 }
 .scroll div {
     position:relative;
@@ -333,7 +351,7 @@ button{
     padding: 10px;
     max-width:fit-content;
     border-radius: 10px;
-    display: relative;
+    position: relative;
 }
 dt{
     text-transform: uppercase;
@@ -368,6 +386,15 @@ footer{
         text-decoration:none;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+    nav a:hover{
+        color:#590242;
+    }
+    button{
+        float:right;
+    }
+    button:hover{
+        color:#020659;
+    }
     label span, input {
         display: none;
     }
@@ -389,11 +416,13 @@ footer{
         overflow-x:hidden;
         max-width:45%;
         }
+    #playlists h2{
+        margin-top:20px;
+    }
     .playlists div{
             display: grid;
             grid-template-columns: 1fr 1fr;
             text-align: center;
-            text-wrap: wrap;
         }
     .curated{
         display:flex;
@@ -407,6 +436,5 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
         text-align: center;
-        text-wrap: wrap;
     }
 }
